@@ -1,3 +1,24 @@
+#body {
+    /* font-family: 'Orbitron', sans-serif; */
+    overflow-y: hidden;
+}
+
 canvas {
+    border: var(--canvasBorderWidth) solid gray;
+    margin: var(--canvasMargin);
+}
+
+.tile-info-tooltip {
+    position: absolute;
+    top: var(--tooltipY);
+    left: var(--tooltipX);
+    margin-left: 16px;
+    padding: 8px;
+    font-size: 10px;
+    background-color: white;
     border: 1px solid black;
+}
+
+.tile-info-tooltip--hidden {
+    display: none;
 }
